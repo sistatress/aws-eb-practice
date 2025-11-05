@@ -3,7 +3,7 @@ package com.aws.practice.elastic_beanstalk.model;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.Duration;
 import java.util.List;
 
 @Builder
@@ -11,7 +11,7 @@ import java.util.List;
 public class Quiz {
     private String name;
     private String theme;
-    private Date duration;
+    private Duration duration;
     private List<Question> questions;
     private QuizType quizType;
     private int points;
